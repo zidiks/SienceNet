@@ -1,0 +1,9 @@
+<form (ngSubmit)="login(loginForm.value)" [formGroup]="loginForm">
+    <div>
+        <input aria-describedby="emailHelp" type="email" name="email" formControlName="email" placeholder="E-mail" required>
+    </div>
+    <div>
+        <input type="password" name="password" formControlName="password" placeholder="Пароль" required>
+    </div>
+    <button type="submit">Войти</button>
+</form>

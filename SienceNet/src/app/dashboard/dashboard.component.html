@@ -1,0 +1,20 @@
+<section *ngIf="showStatus">
+    <mat-toolbar id="dashboard-nav" color="primary">
+        <mat-icon>admin_panel_settings</mat-icon>
+        <span>Control Panel</span>
+        <div class="example-button-row" style="margin-left: 5vw;">
+            <a mat-button routerLink="index">главная</a>
+            <a mat-button href="" target="_blank">статьи</a>
+            <a mat-button href="" target="_blank">видео</a>
+            <a mat-button href="" target="_blank">мероприятия</a>
+        </div>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon">
+          <mat-icon>account_circle</mat-icon>
+        </button>
+    </mat-toolbar>
+    <div id="dashboard-content">
+        <button (click)='logout()'>Logout</button>
+        <router-outlet></router-outlet>
+    </div>
+</section>
