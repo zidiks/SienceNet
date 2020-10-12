@@ -58,12 +58,18 @@
     width: 100%;
 }
 
+.profile-info-text {
+    padding-left: 0.5rem;
+    border-left: 1px solid #3f51b5;
+    margin-left: 0.5rem;
+}
+
 .profile-info-avatar-name {
     position: absolute;
     bottom: 0;
     z-index: 100;
     opacity: 0.9;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     color: white;
     padding: 1rem;
@@ -81,4 +87,37 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     margin: 0 0 1rem;
     padding: 1rem;
+}
+
+.profile-content-general-title {
+    display: flex;
+    align-items: center;
+    padding: 0 0 1rem;
+}
+
+.projs-card {
+    background-color: #3f51b5;
+    color: white;
+    margin: 0 0 1rem;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.profile-content-general-content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-info-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.closed-proj {
+    background-color: #50bf72 !important;
+}
+
+.profile-content-general-title,
+.profile-info-general-title {
+    font-weight: 600;
 }
