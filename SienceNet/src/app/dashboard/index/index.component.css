@@ -1,29 +1,84 @@
 .profile-content {
-    margin: 3rem 5rem 3rem;
+    margin: 1rem 0.5rem;
 }
 
-.profile-header {
+.content-heigth {
+    height: calc(100vh - 64px);
+}
+
+.profile-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: inherit;
+}
+
+.profile-info {
+    width: calc(25% - 1rem);
+    margin: 0rem 0.5rem;
+}
+
+.profile-info-general {
+    width: 100%;
+    padding-bottom: 0.7rem;
+}
+
+.profile-info-general-title {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 1rem 0;
+}
+
+.profile-info-item {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 1rem 0;
+}
+
+.profile-info-inner {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.profile-content-inner-name {
     border-bottom: 2px solid #3f51b5;
-    display: flex;
-    align-items: center;
 }
 
-.profile-avatar {
-    height: 8vw;
-    width: 8vw;
-    min-width: 100px;
-    min-height: 100px;
-    display: flex;
-    align-items: center;
+.profile-content-inner-inner {
+    height: 1000px;
+}
+
+.profile-info-avatar-wrapper {
+    position: relative;
+    height: 20vw;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
-.profile-avatar img {
+.profile-info-avatar {
     width: 100%;
 }
 
-.profile-name {
-    padding: 1rem 2rem 1rem;
-    font-size: 2rem;
-    line-height: 2rem;
+.profile-info-avatar-name {
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: white;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.profile-content-inner {
+    width: calc(75% - 1rem);
+    margin: 0rem 0.5rem;
+}
+
+.profile-content-general {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 0 0 1rem;
+    padding: 1rem;
 }

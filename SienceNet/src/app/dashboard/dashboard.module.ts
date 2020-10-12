@@ -16,6 +16,7 @@ import { MatMenuModule } from "@angular/material/menu";
 import { MatTabsModule } from "@angular/material/tabs";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatBadgeModule } from "@angular/material/badge";
+import { MatChip, MatChipsModule } from "@angular/material/chips";
 
 
 
@@ -33,7 +34,8 @@ import { MatBadgeModule } from "@angular/material/badge";
     MatMenuModule,
     MatTabsModule,
     MatGridListModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatChipsModule
   ]
 })
 export class DashboardModule {}

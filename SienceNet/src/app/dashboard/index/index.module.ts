@@ -1,17 +1,29 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { IndexComponent } from "./index.component";
 
-import { MatToolbarModule, MatToolbar } from "@angular/material/toolbar";
+import { MatTabsModule } from "@angular/material/tabs";
+import { MatGridListModule } from "@angular/material/grid-list";
+import { MatListModule } from "@angular/material/list";
+import { MatInputModule } from "@angular/material/input";
+import { MatIconModule } from "@angular/material/icon";
+import { MatButtonModule } from "@angular/material/button";
+import { MatChipsModule } from "@angular/material/chips";
 
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [IndexComponent],
   imports: [
     CommonModule,
-    MatToolbarModule,
-    MatToolbar
+    MatTabsModule,
+    MatGridListModule,
+    MatListModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
+    MatChipsModule,
   ]
 })
 export class IndexModule { }
