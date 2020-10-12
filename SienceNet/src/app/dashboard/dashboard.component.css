@@ -1,3 +1,23 @@
 .example-spacer {
     flex: 1 1 auto;
 }
+
+.dash-nav-btn {
+    line-height: 1;
+}
+
+#dashboard-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    /* For macOS/iOS Safari */
+    top: 0;
+    /* Sets the sticky toolbar to be on top */
+    z-index: 1000;
+    /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+#dashboard-content {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}

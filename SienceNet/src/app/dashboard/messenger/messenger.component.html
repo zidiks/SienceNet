@@ -1,0 +1,184 @@
+<mat-tab-group class="chat-box">
+    <mat-tab class="chat-tab" label="Чат">
+        <mat-grid-list id="chat-grid" cols="12" class="myGridList" rowHeight="fit">
+            <mat-grid-tile class="chat-interlocutions" [colspan]="3">
+                <mat-list class="interlocutions-list">
+                    <mat-list-item>Адам Петрашкевич</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Сейргей Ржеусский</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item class="interlocutions-active">Миронов Владимир</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Адам Петрашкевич</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Сейргей Ржеусский</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Адам Петрашкевич</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Сейргей Ржеусский</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Адам Петрашкевич</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Сейргей Ржеусский</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Адам Петрашкевич</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Сейргей Ржеусский</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Адам Петрашкевич</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Сейргей Ржеусский</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Адам Петрашкевич</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Сейргей Ржеусский</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Адам Петрашкевич</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Сейргей Ржеусский</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Адам Петрашкевич</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Сейргей Ржеусский</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Адам Петрашкевич</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Сейргей Ржеусский</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Адам Петрашкевич</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Сейргей Ржеусский</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Адам Петрашкевич</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Сейргей Ржеусский</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Адам Петрашкевич</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Сейргей Ржеусский</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Адам Петрашкевич</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Сейргей Ржеусский</mat-list-item>
+                </mat-list>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="9">
+                <div id="chat-display">
+                    <div id="chat-content" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+                        <mat-list id="messages-list">
+                            <mat-list-item class="chat-content-item">
+                                <div class="chat-list-item-content chat-interlocutions-list">
+                                    <div class="user-avatar-box">
+                                        <div class="user-avatar"></div>
+                                    </div>
+                                    <div class="user-message">Привет!
+                                    </div>
+                                </div>
+                            </mat-list-item>
+                            <mat-list-item class="chat-content-item">
+                                <div class="chat-list-item-content chat-interlocutions-list">
+                                    <div class="user-avatar-box">
+                                        <div class="user-avatar"></div>
+                                    </div>
+                                    <div class="user-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam facilis voluptatem, ducimus, nihil nemo aliquid libero hic debitis, voluptatibus officia dolor aspernatur rerum. Optio doloremque necessitatibus eos
+                                        explicabo reiciendis esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem assumenda perspiciatis quidem, sapiente, quas asperiores, placeat beatae illo laudantium nisi iure! Unde amet porro
+                                        hic ratione, harum quasi similique.
+                                    </div>
+                                </div>
+                            </mat-list-item>
+                            <mat-list-item class="chat-content-item">
+                                <div class="chat-list-item-content chat-interlocutions-list">
+                                    <div class="user-avatar-box">
+                                        <div class="user-avatar"></div>
+                                    </div>
+                                    <div class="user-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam facilis voluptatem, ducimus, nihil nemo aliquid libero hic debitis, voluptatibus officia dolor aspernatur rerum. Optio doloremque necessitatibus eos
+                                        explicabo reiciendis esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem assumenda perspiciatis quidem, sapiente, quas asperiores, placeat beatae illo laudantium nisi iure! Unde amet porro
+                                        hic ratione, harum quasi similique.
+                                    </div>
+                                </div>
+                            </mat-list-item>
+                            <mat-list-item class="chat-content-item">
+                                <div class="chat-list-item-content chat-interlocutions-list">
+                                    <div class="user-avatar-box">
+                                        <div class="user-avatar"></div>
+                                    </div>
+                                    <div class="user-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam facilis voluptatem, ducimus, nihil nemo aliquid libero hic debitis, voluptatibus officia dolor aspernatur rerum. Optio doloremque necessitatibus eos
+                                        explicabo reiciendis esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem assumenda perspiciatis quidem, sapiente, quas asperiores, placeat beatae illo laudantium nisi iure! Unde amet porro
+                                        hic ratione, harum quasi similique.
+                                    </div>
+                                </div>
+                            </mat-list-item>
+                            <mat-list-item class="chat-content-item">
+                                <div class="chat-list-item-content chat-interlocutions-list">
+                                    <div class="user-avatar-box">
+                                        <div class="user-avatar"></div>
+                                    </div>
+                                    <div class="user-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam facilis voluptatem, ducimus, nihil nemo aliquid libero hic debitis, voluptatibus officia dolor aspernatur rerum. Optio doloremque necessitatibus eos
+                                        explicabo reiciendis esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem assumenda perspiciatis quidem, sapiente, quas asperiores, placeat beatae illo laudantium nisi iure! Unde amet porro
+                                        hic ratione, harum quasi similique.
+                                    </div>
+                                </div>
+                            </mat-list-item>
+                            <mat-list-item class="chat-content-item">
+                                <div class="chat-list-item-content chat-interlocutions-list">
+                                    <div class="user-avatar-box">
+                                        <div class="user-avatar"></div>
+                                    </div>
+                                    <div class="user-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam facilis voluptatem, ducimus, nihil nemo aliquid libero hic debitis, voluptatibus officia dolor aspernatur rerum. Optio doloremque necessitatibus eos
+                                        explicabo reiciendis esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem assumenda perspiciatis quidem, sapiente, quas asperiores, placeat beatae illo laudantium nisi iure! Unde amet porro
+                                        hic ratione, harum quasi similique.
+                                    </div>
+                                </div>
+                            </mat-list-item>
+                            <mat-list-item class="chat-content-item">
+                                <div class="chat-list-item-content chat-interlocutions-list">
+                                    <div class="user-avatar-box">
+                                        <div class="user-avatar"></div>
+                                    </div>
+                                    <div class="user-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam facilis voluptatem, ducimus, nihil nemo aliquid libero hic debitis, voluptatibus officia dolor aspernatur rerum. Optio doloremque necessitatibus eos
+                                        explicabo reiciendis esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem assumenda perspiciatis quidem, sapiente, quas asperiores, placeat beatae illo laudantium nisi iure! Unde amet porro
+                                        hic ratione, harum quasi similique.
+                                    </div>
+                                </div>
+                            </mat-list-item>
+                            <mat-list-item class="chat-content-item">
+                                <div class="chat-list-item-content chat-interlocutions-list">
+                                    <div class="user-avatar-box">
+                                        <div class="user-avatar"></div>
+                                    </div>
+                                    <div class="user-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam facilis voluptatem, ducimus, nihil nemo aliquid libero hic debitis, voluptatibus officia dolor aspernatur rerum. Optio doloremque necessitatibus eos
+                                        explicabo reiciendis esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem assumenda perspiciatis quidem, sapiente, quas asperiores, placeat beatae illo laudantium nisi iure! Unde amet porro
+                                        hic ratione, harum quasi similique.
+                                    </div>
+                                </div>
+                            </mat-list-item>
+                            <mat-list-item class="chat-content-item">
+                                <div class="chat-list-item-content chat-interlocutions-list">
+                                    <div class="user-avatar-box">
+                                        <div class="user-avatar"></div>
+                                    </div>
+                                    <div class="user-message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam facilis voluptatem, ducimus, nihil nemo aliquid libero hic debitis, voluptatibus officia dolor aspernatur rerum. Optio doloremque necessitatibus eos
+                                        explicabo reiciendis esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem assumenda perspiciatis quidem, sapiente, quas asperiores, placeat beatae illo laudantium nisi iure! Unde amet porro
+                                        hic ratione, harum quasi similique.
+                                    </div>
+                                </div>
+                            </mat-list-item>
+                        </mat-list>
+                    </div>
+                    <div id="chat-sender">
+                        <mat-form-field class="chat-full-width">
+                            <mat-label>Сообщение</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <div class="chat-send-btn">
+                            <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+                                <mat-icon>message</mat-icon>
+                              </button>
+                        </div>
+                    </div>
+                </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </mat-tab>
+    <mat-tab label="Контакты"> Content 2 </mat-tab>
+</mat-tab-group>

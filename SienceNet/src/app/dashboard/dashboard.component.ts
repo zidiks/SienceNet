@@ -38,7 +38,11 @@ export class DashboardComponent implements OnInit {
 
   }
 
-  
+  hidden = false;
+
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
+  }
 
   logout() {
     this.AuthService.logOut();

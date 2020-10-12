@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AddpostModule } from './dashboard/addpost/addpost.module';
-import { InviteModule } from './dashboard/invite/invite.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MessengerModule } from './dashboard/messenger/messenger.module';
 
 
 @NgModule({
@@ -29,8 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     }),
     AngularFirestoreModule,
     AddpostModule,
-    InviteModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MessengerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

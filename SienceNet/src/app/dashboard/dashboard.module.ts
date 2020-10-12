@@ -12,6 +12,10 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from "@angular/material/menu";
+import { MatTabsModule } from "@angular/material/tabs";
+import { MatGridListModule } from "@angular/material/grid-list";
+import { MatBadgeModule } from "@angular/material/badge";
 
 
 
@@ -25,7 +29,11 @@ import { MatListModule } from '@angular/material/list';
     LayoutModule,
     MatButtonModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatMenuModule,
+    MatTabsModule,
+    MatGridListModule,
+    MatBadgeModule
   ]
 })
 export class DashboardModule {}
