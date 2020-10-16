@@ -106,8 +106,8 @@ export class AuthService {
             }else{
               console.log('permisssions succes');
               this.userboolean = true;
-              if ( this.router.url == '/admin') {
-                this.ngZone.run(() => this.router.navigate(['/admin/index'])); 
+              if ( this.router.url == '/dashboard') {
+                this.ngZone.run(() => this.router.navigate(['/dashboard/index'])); 
               } else
              this.ngZone.run(() => this.router.navigate([url])); 
             }

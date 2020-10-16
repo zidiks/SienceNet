@@ -10,7 +10,6 @@ import { AddpostModule } from './dashboard/addpost/addpost.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MessengerModule } from './dashboard/messenger/messenger.module';
 
-
 @NgModule({
   declarations: [
     AppComponent
@@ -30,7 +29,7 @@ import { MessengerModule } from './dashboard/messenger/messenger.module';
     AngularFirestoreModule,
     AddpostModule,
     BrowserAnimationsModule,
-    MessengerModule
+    MessengerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

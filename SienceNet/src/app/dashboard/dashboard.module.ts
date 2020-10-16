@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { IndexComponent } from './index/index.component';
+import { ExpertsComponent } from "./addnew/experts/experts.component";
+import { AddnewComponent } from "./addnew/addnew.component";
 
 import { MatToolbarModule } from "@angular/material/toolbar";
 import {MatIconModule} from '@angular/material/icon';
@@ -18,11 +20,12 @@ import { MatGridListModule } from "@angular/material/grid-list";
 import { MatBadgeModule } from "@angular/material/badge";
 import { MatChipsModule } from "@angular/material/chips";
 import { MatCardModule } from "@angular/material/card";
+import { MatStepperModule } from "@angular/material/stepper";
 
 
 
 @NgModule({
-  declarations: [DashboardComponent, IndexComponent, NavigationComponent],
+  declarations: [DashboardComponent, IndexComponent, NavigationComponent, ExpertsComponent, AddnewComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
@@ -37,8 +40,8 @@ import { MatCardModule } from "@angular/material/card";
     MatGridListModule,
     MatBadgeModule,
     MatChipsModule,
-    MatCardModule
-
+    MatCardModule,
+    MatStepperModule
   ]
 })
 export class DashboardModule {}
