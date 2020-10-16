@@ -1,26 +1,39 @@
-<section class="experts-wrappet">
+<section class="experts-wrappet" [ngClass]="currentClasses">
     <div class="left-box">
-        <mat-vertical-stepper [linear]="isLinear" #stepper>
-            <mat-step *ngFor="let stage of stagesMap; let i = index" [stepControl]="!stagesMap[i+1]">
-                <ng-template matStepLabel>
-                    {{ stage }}
-                </ng-template>
-            </mat-step>
-            <mat-step *ngIf="currentData">
-                <ng-template matStepLabel>{{ selectparam.selectedOptions.selected[0]?.value ? selectparam.selectedOptions.selected[0]?.value : 'Выберите раздел' }}</ng-template>
-            </mat-step>
-        </mat-vertical-stepper>
+        <div>
+            <mat-list class="left-box-list">
+                <div mat-subheader>Выбранные параметры</div>
+                <mat-list-item *ngFor="let stage of stagesMap; let i=index;">
+                    <div mat-line class="left-box-list-item">
+                        <span class="left-box-list-item-num">{{i+1}}</span>{{stage}}
+                    </div>
+                </mat-list-item>
+                <mat-list-item *ngIf="currentData">
+                    <div mat-line class="left-box-list-item">
+                        <span class="left-box-list-item-num">+</span>{{ selectparam.selectedOptions.selected[0]?.value ? selectparam.selectedOptions.selected[0]?.value : '...' }}</div>
+                </mat-list-item>
+            </mat-list>
+        </div>
     </div>
     <div class="center-box">
+
         <mat-selection-list #selectparam [multiple]="false">
             <mat-list-option *ngFor="let param of params" class="select-item" [value]="param">
                 {{param}}
             </mat-list-option>
         </mat-selection-list>
     </div>
-    <div class="right-box"></div>
+    <div class="right-box">
+        <mat-list class="left-box-list">
+            <div mat-subheader>Результаты поиска</div>
+            <mat-list-item>
+                <p>Шульмин Андрей Владимирович</p>
+            </mat-list-item>
+        </mat-list>
+    </div>
     <div class="bottom-box">
-        <button mat-raised-button color="primary" (click)="back()" [disabled]="stagesMap.length > 0 ? false : true">Назад</button>
+        <button *ngIf="stagesMap.length > 0 ? false : true" routerLink="/dashboard/addnew" mat-raised-button color="primary">Выход</button>
+        <button *ngIf="stagesMap.length > 0 ? true : false" mat-raised-button color="primary" (click)="back()">Назад</button>
         <button *ngIf="currentData" mat-raised-button color="primary" (click)="next(selectparam.selectedOptions.selected[0]?.value)" [disabled]="!selectparam.selectedOptions.selected[0]?.value">Далее</button>
         <button *ngIf="!currentData" mat-raised-button color="primary">Сохранить</button>
     </div>
