@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-experts',
-  templateUrl: './experts.component.html',
-  styleUrls: ['./experts.component.css']
+  selector: 'app-resources',
+  templateUrl: './resources.component.html',
+  styleUrls: ['./resources.component.css']
 })
-export class ExpertsComponent implements OnInit {
+export class ResourcesComponent implements OnInit {
 
-  
   data: object = {
     'фармация' : {
       'спектрофотометрия' : {

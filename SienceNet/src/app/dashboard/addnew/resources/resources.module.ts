@@ -4,11 +4,12 @@ import { MatListModule, MatListIconCssMatStyler } from "@angular/material/list";
 import { MatStepperModule } from "@angular/material/stepper";
 import { MatIconModule } from "@angular/material/icon";
 
-import { ExpertsComponent } from "./experts.component";
+import { ResourcesComponent } from "./resources.component";
+
 
 
 @NgModule({
-  declarations: [ExpertsComponent],
+  declarations: [ResourcesComponent],
   imports: [
     CommonModule,
     MatListModule,
@@ -17,4 +18,4 @@ import { ExpertsComponent } from "./experts.component";
     MatIconModule
   ]
 })
-export class ExpertsModule { }
+export class ResourcesModule { }

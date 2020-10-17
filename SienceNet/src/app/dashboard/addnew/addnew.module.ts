@@ -8,6 +8,7 @@ import { MatIconModule } from "@angular/material/icon";
 
 
 import { DashboardRoutingModule } from "../dashboard-routing.module";
+import { ResourcesComponent } from './resources/resources.component';
 
 
 

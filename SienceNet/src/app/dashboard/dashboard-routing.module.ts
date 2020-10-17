@@ -6,13 +6,15 @@ import { AddnewComponent } from "./addnew/addnew.component";
 import { DashboardComponent } from './dashboard.component';
 import { MessengerComponent } from "./messenger/messenger.component";
 import { ExpertsComponent } from "./addnew/experts/experts.component";
+import { ResourcesComponent } from "./addnew/resources/resources.component";
 
 const routes: Routes = [
   { path: '', component: DashboardComponent, children: [
     { path: 'index', component: IndexComponent },
     { path: 'messenger', component: MessengerComponent },
     { path: 'addnew', component: AddnewComponent},
-    { path: 'addnew/experts', component: ExpertsComponent}
+    { path: 'addnew/experts', component: ExpertsComponent},
+    { path: 'addnew/resources', component: ResourcesComponent}
   ] },
 ];
 
