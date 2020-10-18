@@ -16,10 +16,26 @@ export class ResourcesComponent implements OnInit {
     'лечебное дело' : false
   }
 
+  experts: object = {
+    0 : {
+      name: 'Усович Александр Константинович',
+      skills: ['лечебное дело']
+    },
+    1 : {
+      name:'Шульмин Андрей Владимирович',
+      skills: ['фармация', 'спектрофотометрия']
+    },
+    2 : {
+      name: 'Ржеусский Сергей Эдуардович',
+      skills: ['фармация', 'спектрофотометрия', 'УФ-спектрофотометрия']
+    }
+  }
+
   params = Object.keys(this.data);
   currentData = this.data;
   isLinear = true;
   stagesMap = [];
+  resultMap = [];
 
   constructor() { }
 
@@ -29,6 +45,7 @@ export class ResourcesComponent implements OnInit {
     this.params = Object.keys(this.currentData);
     console.log(this.stagesMap);
     this.listenProp();
+    this.expertsSelect();
   }
 
   back() {
@@ -39,6 +56,7 @@ export class ResourcesComponent implements OnInit {
     console.log(this.currentData);
     this.params = Object.keys(this.currentData);
     this.listenProp();
+    this.expertsSelect();
   }
 
   currentClasses={ 
@@ -63,6 +81,13 @@ export class ResourcesComponent implements OnInit {
       'experts-wrappet-start': false,
       'experts-wrappet-all': true,
       'experts-wrappet-end': false
+    }
+  }
+
+  expertsSelect() {
+    this.resultMap = [];
+    for (var key in this.experts) {
+      if (this.experts[key].skills.includes(this.stagesMap[this.stagesMap.length-1])) this.resultMap.push(this.experts[key].name);
     }
   }
 

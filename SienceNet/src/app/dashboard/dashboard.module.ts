@@ -22,10 +22,11 @@ import { MatBadgeModule } from "@angular/material/badge";
 import { MatChipsModule } from "@angular/material/chips";
 import { MatCardModule } from "@angular/material/card";
 import { MatStepperModule } from "@angular/material/stepper";
+import { HelpComponent } from './help/help.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, IndexComponent, NavigationComponent, ExpertsComponent, ResourcesComponent,AddnewComponent, ],
+  declarations: [DashboardComponent, IndexComponent, NavigationComponent, ExpertsComponent, ResourcesComponent,AddnewComponent, HelpComponent, ],
   imports: [
     CommonModule,
     DashboardRoutingModule,

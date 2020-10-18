@@ -26,8 +26,8 @@
     <div class="right-box">
         <mat-list class="left-box-list">
             <div mat-subheader>Результаты поиска</div>
-            <mat-list-item>
-                <p>Шульмин Андрей Владимирович</p>
+            <mat-list-item *ngFor="let item of resultMap">
+                <p>{{ item }}</p>
             </mat-list-item>
         </mat-list>
     </div>
